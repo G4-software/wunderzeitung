@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация | Wunderzeitung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class='headline'>
+        <a href="index.php">
+            <span class='title'>Wunderzeitung</span>
+        </a>
+    </div>
+	</header>
+  <main>
+    <div class="main">
+      <h2>Регистрация аккаунта</h2>
+      <form id="register" action="register.php" method=post>
+        <p>Имя пользователя:</p>
+          <input type="text" name="username" />
+        <p>Полное имя:</p>
+          <input type="text" name="name" />
+        <p>Пароль:</p>
+          <input type="password" name="pass" />
+        <p>Подтвердите пароль:</p>
+          <input type="password" name="pass_conf" />
+        <input type="submit" />
+      </form>
+    </div>
+  </main>
+</body>
+</html>

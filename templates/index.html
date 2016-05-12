@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	{% include "header.html" %}
+	<main>
+		<div class="main">
+			<h1>Добро пожаловать в Wunderzeitung!</h1>
+			
+			{% if logged_in %}
+			<p class="user">
+				Вы вошли как <a href="account.php">{{ username }}</a>
+			</p>
+			{% else %}
+			<div id="login">
+				<p>Уже зарегистрированы? <a href="login.php">Войти</a>.</p>
+				<p>Ещё нет аккаунта? <a href="register.html">Зарегистрироваться</a>.</p>
+			</div>
+
+			<div id="users">
+				<h4>В системе уже зарегистрировано {{ numOfUsers }} пользователей:</h4>
+				<ul>
+				{% for username in users %}
+					<li>{{ username }}</li>
+				{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+
+			<div id="about">
+				<h2>Что такое Wunderzeitung?</h2>
+				<p>Wunderzeitung - это простая система управления содержиым для сайта нашей гимназии.</p>
+			</div>
+			<div id="team">
+				<h2>Кто мы?</h2>
+				<p>
+					Команда проекта Wunderzeitung:
+					<ul>
+						<li>Сергей</li>
+						<li>Никита</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

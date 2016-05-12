@@ -1,0 +1,108 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: #bdc3c7;
+}
+
+h1, h2 {
+	color: #2C3E50;
+}
+
+h1 {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+h4 {
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+
+ul {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 40px;
+}
+
+.main {
+	margin-left: 60px;
+	margin-top: 20px;
+	background: #ffffff;
+	width: 760px;
+	padding-top: 2px;
+	height: 100%;
+	padding-left: 20px;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+	border-radius: 1px;
+}
+
+header {
+	width: 100%;
+	height: 75px;
+	background-color: #34495e;
+}
+
+.headline {
+	display: inline-block;
+	position: absolute;
+	left: 60px;
+	top: 5px;
+	text-decoration: none;
+	bottom: none;
+}
+
+.headline a {
+	text-decoration: none;
+}
+
+.headline .title {
+	font-size: 50px;
+	color: #ecf0f1;
+}
+
+.user_block {
+	position: absolute;
+	right: 15px;
+	top: auto;
+	bottom: auto;
+	font-size: 18px;
+}
+
+.user_block ul {
+	list-style: none;
+}
+
+.user_block li {
+	display: inline;
+}
+
+.user_block a {
+	padding: 5px 10px;
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	color: #ecf0f1;
+}
+
+.user_block a:visited{
+	color: #ecf0f1;
+}
+
+form#register {
+	padding-bottom: 16px;
+}

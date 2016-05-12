@@ -1,0 +1,17 @@
+<header>
+  <div class="headline">
+      <a href="index.php">
+          <span class="title">Wunderzeitung</span>
+      </a>
+  </div>
+  <div class="user_block">
+    <ul>
+      {% if logged_in %}
+        <li><a id="user" href="account.php">{{ username }}</a></li>
+      {% else %}
+        <li><a id="login" href="login.php">Войти</a></li>
+        <li><a id="register" href="register.html">Зарегистрироваться</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</header>
